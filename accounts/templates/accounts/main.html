@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>CRM Test!</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static '/css/main.css' %}">
+
+
+  </head>
+  <body>
+    
+  	{% include 'accounts/navbar.html' %}
+
+	<div class="container-fluid">
+		{% block content %}
+
+
+
+		{% endblock %}
+    </div>
+
+	<hr>
+
+	<!-- Footer -->
+	<div class="container-fluid text-white fixed-bottom" style="background: #212529; font-size: 13px;">
+		<div class="row">
+
+		  <div class="col-sm-6 pt-3">
+		    <p>Test | &copy; 2020 All rights reserved</p>
+		  </div>
+
+		  <div class="col-sm-6 text-right pt-3">
+		    <p>Design & Developed By : <strong><a href="http://mahmudbhuiyan.com/" target="_blank" class="text-white" style="text-decoration: none;">Mahmud</a></strong></p>
+		  </div>
+
+		</div>
+	</div>
+	<!-- Footer -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

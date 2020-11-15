@@ -1,11 +1,16 @@
 {% load static %}
 
+
 <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-dark mb-2">
+  
   <img style="height: 30px; margin-right: 5px;" src=" {% static 'img/logoM.png' %}">
-  <a class="navbar-brand" href="#">Navbar</a>
+  
+  <a class="navbar-brand" href="{% url 'home' %}">Navbar</a>
+  
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
+
   <div class="collapse navbar-collapse" id="navbarCollapse">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
@@ -16,4 +21,10 @@
       </li>
     </ul>
   </div>
+
+  <span class="text-white mr-2">Hello, {{request.user}}</span>
+
+  <a class="btn btn-info pb-2" href="{% url 'logout' %}">Logout</a>
+
+
 </nav>
